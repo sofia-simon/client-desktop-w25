@@ -1,0 +1,646 @@
+/* import fonts */
+
+
+.atkinson-hyperlegible-regular {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .atkinson-hyperlegible-bold {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .atkinson-hyperlegible-regular-italic {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .atkinson-hyperlegible-bold-italic {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+/* ----skip to main content----  */
+.skip-link a {
+    position: absolute;
+    background-color: white;
+    color: black;
+    top: -40px;
+}
+
+.skip-link a:focus {
+    top: 20px;
+}
+
+/* ----background of site---- */
+body, footer {
+    background-color: #00274C;
+}
+
+/* ----focus---- */
+*:focus {
+    border: 2px solid white;
+}
+
+/* ----grid-setup---- */
+.header-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 15px 15px 15px 15px;
+    /* grid-row-gap: 20px; */
+    gap: 20px; 
+}
+
+/* ----main grids---- */
+section {
+    /* display: grid; */
+    /* grid-template-columns: repeat(4, 1fr); */
+    margin: 15px 15px 15px 15px;
+    /* grid-row-gap: 20px; */
+    gap: 20px;
+}
+
+h2, h3, p, ol, ul {
+    grid-column: 1/-1;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+/* article formatting */
+.article {
+    grid-column: 1/-1;
+}
+
+.article h3, .article figure, .article p {
+    margin-bottom: 10px;
+}
+
+/* item 4 formatting */
+.item-4 {
+    display: block;
+}
+
+.item-4 ul li {
+    margin-bottom: 10px;
+}
+
+.item-4 h2, .item-4 h3, .item-4 figure, .item-4 p{
+    margin-bottom: 20px;
+}
+
+/* ----Header Logo---- */
+.header-logo {
+    grid-column: 1/-1;
+    justify-self: center;
+}
+
+/* ----navigation---- */
+/* nav ul li a:hover {
+    text-decoration: 1px underline black;
+} */
+
+nav {
+    grid-column: 1/-1;
+}
+
+nav ul {
+    grid-column: 1/-1;
+    /* display: grid;
+    grid-template-columns: 1fr; Forces a single-column layout for list items */
+}
+
+nav ul li {
+    background-color: #FFCB05;
+    text-align: center;
+    font-family: "Atkinson Hyperlegible", sans-serif;;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+/* nav ul li:last-of-type {
+    margin-bottom: 0px;
+} */
+
+nav ul li a {
+    color: #00274C;
+    display: block; /* Ensures the entire list item is clickable */
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline black 1px;
+}
+
+.selected {
+    text-decoration: 2px underline #00274C;
+}
+
+/* ----h1---- */
+h1 {
+    grid-column: 1/-1;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    color: #ffffff;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* ----h2---- */
+h2 {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    color: #FFCB05;
+    text-align: left;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* ----h3---- */
+h3 {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    color: #ffffff;
+    text-align: left;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: 1px underline #ffffff;
+}
+
+/* ----p---- */
+p {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    color: #ffffff;
+    text-align: left;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* ----figcaption---- */
+figcaption {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    color: #ffffff;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* ----a---- */
+a {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    color: #FFCB05;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: 2px underline #FFCB05;
+}
+
+/* ----list items normal---- */
+/* ol {
+} */
+.list {
+    list-style-position: inside; /*inquire about this*/
+    margin-left: 20px;
+}
+
+.list .list-item {
+    list-style-type: disc;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    color: #ffffff;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* ----list items links---- */
+
+/* ol li {
+    list-style-type: disc;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+} */
+
+/* ----other---- */
+#image-span-columns { /*why has to be an id, class didn't work*/
+    grid-column: 1/-1;
+    justify-self: center;
+}
+
+ol li, ul li {
+    margin-bottom: 10px;
+}
+
+/* ----footer---- */
+footer p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff10;
+}
+
+.footer-decoration {
+    display: none;
+}
+
+/* --------Tutoring page only-------- */
+.caption {
+    margin-left: 15px;
+}
+
+/* --------maize and blue only-------- */
+
+iframe {
+    max-width: 100%;
+    min-width: 75%;
+    margin: auto;
+}
+
+.m-b-item-1 {
+    display: block;
+}
+
+.m-b-item-1 ul li {
+    margin-bottom: 10px;
+}
+
+.m-b-item-1 h2, .m-b-item-1 h3, .m-b-item-1 figure, .m-b-item-1 p{
+    margin-bottom: 20px;
+}
+
+#what-we-provide-section {
+    background-color: #2F65A7;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px 30px;
+    padding: 10px;
+    border-radius: 1em;
+}
+
+#what-we-provide-section img {
+    width: 50%;
+}
+
+#what-we-provide-section div {
+    text-align: center;
+    /* justify-content: center; */
+}
+
+#what-we-provide-section h2 {
+    text-align: center;
+}
+
+#content #welcome, #content #provide {
+    margin-left: 15px;
+}
+
+
+/* --------advising-------- */
+.button {
+    background-color: #FFCB05;
+    text-align: center;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.button{
+    text-decoration: none;
+    color: #00274C;
+    display: block; /* Ensures the entire list item is clickable */
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* .button:last-of-type {
+    margin-bottom: 0px;
+} */
+
+
+/* --------advising------- */
+.list-container, .button-container {
+    grid-column: 1/-1;
+}
+
+.a-item-2 {
+    gap: 0px;
+}
+
+.a-item-2 h2 {
+    margin-bottom: 20px;
+}
+
+
+@media (min-width: 845px) {
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+
+        background-color: #00274c;
+        margin: 0px 0px 0px 0px;
+        padding: 15px;
+
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+        /* background: linear-gradient(to bottom, #00274C, #00274c1c); */
+    }
+    /* #header {
+        display: flex;
+    } */
+    nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav ul li {
+        background-color: #00274C;
+    }
+    nav ul li a {
+        color: #ffffff;
+        display: block; /* Ensures the entire list item is clickable */
+        padding: 10px;
+        text-decoration: none;
+        font-style: initial;
+    }
+
+    .selected a {
+        color:#FFCB05;
+        text-decoration: 2px underline #FFCB05;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline #FFCB05 3px;
+        color: #ffffff;
+    }
+
+    body {
+        background-color: #ffffff;        
+    }
+
+    main {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    h1 {
+        color: #00274C;
+        margin-bottom: 10px;
+    }
+
+    #content {
+        padding-top: 50px;
+    }
+
+    h2 {
+        color: #702082;
+    }
+
+    h3, p, figcaption {
+        color: #222224;
+    }
+
+    .list .list-item {
+        color: #222224;
+    }
+
+    a {
+        color: #9A3324;
+        text-decoration: #9A3324 2px underline;
+    }
+
+    a:hover {
+        color: #692116;
+        text-decoration: #692116 2px underline;
+    }
+
+    .article {
+        background-color: #00274c1c;
+        padding: 15px;
+        border-radius: 1em;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #physical-health-container, #mental-health-container {
+        display: flex;
+        gap: 15px;
+    }
+
+    footer {
+        display: flex;
+        background-color: #00274c1c;
+        justify-content: space-around;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+
+    footer a {
+        color: #00274C;
+        text-decoration: 2px underline #00274C;
+    }
+
+    .footer-decoration {
+        display: contents;
+    }
+
+    .cupboard-info-container {      /*SPACING IS WEIRD*/
+        /* display: flex; */
+        gap: 15px;
+        justify-items: stretch;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #what-we-provide-section {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #what-we-provide-section p, #what-we-provide-section h3 {
+        color: #ffffff;
+    }
+
+    .img-what-we-provide {
+        margin-bottom: 10px;
+    }
+
+    #where-to-find-container {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /* #where-to-find-container img {
+        height: 100%;
+    } */
+
+    .item-a {
+        /* flex-grow: 1; */
+        grid-column: 1 / span 1;
+    }
+
+    .item-b {
+        /* flex-grow: 2; */
+        grid-column: 2 / span 2;
+    }
+
+    .item-a img{
+        min-width: 20%;
+        height: auto;
+    }
+
+    .m-b-item-1 {
+        margin-bottom: 50px;
+    }
+
+    #physical-health-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .health-1 {
+        grid-column: 1 / span 1;
+    }
+
+    .health-2 {
+        grid-column: 2 / span 1;
+    }
+
+    .buttons-advising-1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .buttons-advising-2 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    .grid-1 {
+        grid-column: 1 / span 1;
+    }
+
+    .grid-2 {
+        grid-column: 2 / span 1;
+    }
+
+    .grid-3 {
+        grid-column: 3 / span 1;
+    }
+
+    .grid-4 {
+        grid-column: 4 / span 1;
+    }
+
+    .grid-1, .grid-2, .grid-3, .grid-4 {
+        /* min-height: 70px; */
+        align-items: stretch;
+        align-content: center;
+    }
+
+    /* .paralax {
+        background-image: url('../images/north_quad.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+    } */
+
+    .hide-desktop {
+        display: none;
+    }
+
+    /* code snippet from https://blog.logrocket.com/create-parallax-scrolling-css/#:~:text=The%20key%20to%20creating%20the,image%20relative%20to%20the%20viewport. */
+    .parallax-container {
+        display: flex;
+        min-height: 65vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      
+        /*  this is where the magic happens:  */
+        background-attachment: fixed;
+      
+        background-image: url('../images/north_quad.jpg');
+        background-position: center;
+        background-size: cover;
+        color: var(--color);
+        row-gap: 4rem;
+      
+        text-align: center;
+    }
+
+    .button:hover{
+        color: #00274C;
+    }
+
+     /* code snippet from https://blog.logrocket.com/create-parallax-scrolling-css/#:~:text=The%20key%20to%20creating%20the,image%20relative%20to%20the%20viewport. */
+     .parallax-container {
+        display: flex;
+        min-height: 70vh;
+        flex-direction: column;
+        align-items:start;
+        justify-content: start;
+      
+        /*  this is where the magic happens:  */
+        background-attachment: fixed;
+      
+        background-image: url('../images/tutoring.jpg');
+        background-position: bottom;
+        background-size: cover;
+        color: var(--color);
+        row-gap: 4rem;
+      
+        text-align: center;
+    }
+
+    .button-404 {
+        display: inline-block;
+    }
+
+    .center {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
