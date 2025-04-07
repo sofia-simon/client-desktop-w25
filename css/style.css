@@ -592,7 +592,7 @@ iframe {
     }
 
     /* code snippet from https://blog.logrocket.com/create-parallax-scrolling-css/#:~:text=The%20key%20to%20creating%20the,image%20relative%20to%20the%20viewport. */
-    .parallax-container {
+    .parallax-container-1 {
         display: flex;
         min-height: 65vh;
         flex-direction: column;
@@ -616,7 +616,7 @@ iframe {
     }
 
      /* code snippet from https://blog.logrocket.com/create-parallax-scrolling-css/#:~:text=The%20key%20to%20creating%20the,image%20relative%20to%20the%20viewport. */
-     .parallax-container {
+     .parallax-container-2 {
         display: flex;
         min-height: 70vh;
         flex-direction: column;
